@@ -1,0 +1,691 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lexend';
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f7fffe;
+}
+
+
+
+nav {
+    background: #ffffff54;
+    backdrop-filter: blur(7px);
+    width: 100%;
+    overflow: hidden;
+    padding: 30px 30px 8px 25px;
+    position: fixed;
+    z-index: 100;
+}
+
+.home {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav .navbar {
+    overflow: hidden;
+    align-items: center;
+    /*padding:  0 20px;
+    padding-bottom: 4px ;*/
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    padding-right: 30px;
+    /* Take it out of flex flow*/
+    left: 50%;
+    transform: translateX(-50%);
+    /* Perfect center independent of logo/button*/
+    align-items: center;
+    justify-content: center;
+}
+
+
+.menu ul {
+    /* From https://css.glass */
+    height: 40px;
+    background: rgba(255, 255, 255, 0.562);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.41);
+}
+
+nav .navbar .menu ul {
+    display: flex;
+}
+
+nav .navbar ul li {
+    display: flex;
+    list-style: none;
+    padding: 0 15px;
+    padding-top: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .navbar li a {
+    color: #011a17a4;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+nav .navbar li a:hover {
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+i {
+    display: none;
+    font-size: 40px;
+    color: #00695c;
+}
+
+#menubutton {
+    padding-bottom: 5px;
+    padding-top: 6px;
+}
+
+/* CSS */
+.button-36 {
+    background-image: linear-gradient(to right, #008d7d, #00695C);
+    border-radius: 20px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: 'lexend';
+    font-size: 16px;
+    height: 45px;
+    letter-spacing: 0.4px;
+    word-spacing: 0.9px;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-36:hover {
+    box-shadow: #64FFDA 0 1px 10px;
+    transition-duration: .1s;
+    font-size: 14.2px;
+}
+
+.navbar .text {
+    font-family: 'Protest Guerrilla';
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    font-size: 34px;
+    color: #00695C;
+}
+
+.navbar .text i {
+    padding: 0 10px;
+}
+
+.hero {
+    padding: 255px 0 2270px;
+}
+
+section {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'amita';
+    font-weight: 500;
+    padding-bottom: 15px;
+    font-size: 65px;
+    line-height: 75px;
+    letter-spacing: .5px;
+    color: #01423a;
+}
+
+.content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.text span {
+    line-height: 10px;
+    font-family: 'oswald';
+    font-weight: 400;
+    font-style: italic;
+    height: 70px;
+    color: #00311096;
+    font-size: 45px;
+}
+
+p {
+    font-family: 'lexend';
+    font-weight: 300;
+    text-align: center;
+    font-size: 16px;
+    padding: 30px 0px 20PX;
+    color: #012e23;
+}
+
+/* Bottom UL Styling */
+.bottom1 {
+    /*position: fixed;  stays visible at bottom of viewport */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 15px 20px;
+    margin: 0;
+    list-style: none;
+}
+
+.bottom1 li {
+    font-family: 'ubuntu';
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    color: #00311096;
+    font-weight: 400;
+}
+
+.bottom1 li span1 {
+    font-size: 30px;
+    color: #01423a;
+}
+
+/* CTA Button */
+.cta-btn {
+    background: linear-gradient(to right, #008d7d, #00695C);
+    color: white;
+    border: none;
+    font-family: 'ubuntu';
+    border-radius: 20px;
+    height: 42px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: linear-gradient(to bottom, #008d7d, #00695c);
+}
+
+.carousel {
+    margin: 5px auto;
+    width: 90%;
+    padding-top: 1px;
+    display: flex;
+    overflow-x: auto;
+    background-color: #e5fffc;
+    height: 100px;
+    border-radius: 25px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    animation: spin 26s infinite linear;
+    padding-right: 1em;
+}
+
+.card {
+    flex: 0 0 5em;
+    padding: 1em;
+    border-radius: .2em;
+    text-align: center;
+    display: flex;
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+.cr {
+    padding: 40px 0 80px;
+}
+
+.title h3 {
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.content {
+    width: 50%;
+    margin: auto;
+}
+
+.title2 span {
+    font-size: 34px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 500px;
+    color: #01423a;
+}
+
+
+.about {
+    background-color: #e5fffc;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.content2 .title2 {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.title2 span {
+    position: relative;
+    /* Essential for positioning pseudo-elements */
+    display: inline-block;
+    /* Or block, depending on desired layout */
+    padding-bottom: 12px;
+    /* Adjust spacing between text and lines */
+}
+
+.title2 span::before,
+.title2 span::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    /* Align lines to the left edge of the text */
+    background-color: #01423a;
+    /* Or any desired color */
+}
+
+.title2 span::before {
+    bottom: 6px;
+    /* Position of the first line */
+    width: 90%;
+    /* Width of the first line */
+    height: 3px;
+}
+
+.title2 span::after {
+    bottom: 0;
+    /* Position of the second line */
+    width: 50%;
+    /* Width of the second line */
+    height: 3.1px;
+}
+
+.content2 {
+    width: 80%;
+    margin: auto;
+
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 70px;
+}
+
+.left {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.left img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.topic {
+    font-size: 29px;
+    margin-top: 10px;
+}
+
+.comm {
+    letter-spacing: .4px;
+    line-height: normal;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.h4 {
+    font-weight: 200;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+.button a:hover {
+    color: #01423a;
+}
+
+.button {
+    border: none;
+    margin: 20px 0;
+}
+
+.button a {
+    font-weight: 300;
+    font-size: 25px;
+    border-radius: 7px;
+    width: 220px;
+    background-color: #01423a;
+    color: white;
+    padding: 9px;
+    transition: all .4s ease;
+}
+
+.button a:hover {
+    background-color: white;
+    border: 1px solid #01423a;
+    transition: all .5s ease;
+}
+
+.right .media-icons a>i {
+    color: #01423a;
+    font-size: 24px;
+    margin-top: 7px;
+    margin-right: 2px;
+}
+
+.media-icons {
+    margin-top: 16px;
+}
+
+.about {
+    margin-bottom: 100px;
+}
+
+
+
+
+
+.title2 .sk::before {
+    bottom: 6px;
+    /* Position of the first line */
+    width: 90%;
+    /* Width of the first line */
+    height: 1.77px;
+}
+
+.title2 .sk::after {
+    bottom: 0;
+    /* Position of the second line */
+    width: 50%;
+    /* Width of the second line */
+    height: 1.97px;
+}
+
+.skills {
+    background-color: #e5fffc;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 100px;
+}
+
+
+.skills .skills-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-details .text {
+    width: 50%;
+    text-align: start;
+}
+
+.skills-details p {
+    color: #0E2431;
+    text-align: justify;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.skills .skills-details .experince {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.num {
+    font-size: 80px;
+    font-family: "poppins";
+}
+
+.exp {
+    margin: 6px;
+    font-size: 18px;
+}
+
+.skills-details .boxes {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills-details .box {
+    width: calc(100%/2 - 20px);
+    margin: 20px 0;
+}
+
+.skills-details .boxes .topic {
+    font-size: 20px;
+    color: #0E2431;
+}
+
+.skills-details .boxes .per {
+    font-size: 60px;
+    color: #0E2431;
+}
+
+
+.services {
+    background-color: #e5fffc;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 100px;
+}
+
+
+
+.title2 .sr::before {
+    bottom: 6px;
+    /* Position of the first line */
+    width: 90%;
+    /* Width of the first line */
+    height: 2.1px;
+}
+
+.title2 .sr::after {
+    bottom: 0;
+    /* Position of the second line */
+    width: 50%;
+    /* Width of the second line */
+    height: 2.25px;
+}
+
+.services .boxs {
+    display: flex;
+    justify-content: center;
+}
+
+.services .boxes .box {
+    background-color: #e5fffc;
+    width: 200px;
+    margin: 20px 0;
+    width: calc(100% /1 - 20px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    cursor: default;
+    transition: all 0.4s ease;
+}
+.services .boxes .box:hover{
+  background: #c4fff8;
+  color: black;
+  
+}
+.boxes .box .icon>i{
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    padding-right: 1px;
+   
+}
+
+.services .boxes .box .icon{
+  height: 50px;
+  width: 50px;
+  background: #01423a;
+  border-radius: 60%;
+  text-align: center;
+  justify-content: center;
+  line-height: 53.3px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 5px auto;
+  transition: all 0.4s ease;
+}
+
+.contact {
+    background-color: #e5fffc;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 100px;
+}
+
+.title2 .ct::before {
+    bottom: 6px;
+    /* Position of the first line */
+    width: 90%;
+    /* Width of the first line */
+    height: 2.6px;
+}
+
+.title2 .ct::after {
+    bottom: 0;
+    /* Position of the second line */
+    width: 50%;
+    /* Width of the second line */
+    height: 2.25px;
+}
+
+.hap{
+    font-size: 16px;
+}
+
+#tp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn2{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#btn2 a{
+    height: 37px;
+    width: 100px;
+    font-size: 14px;
+    text-align: center;
+}
+footer{
+    background-color: #01423a ;
+    padding: 15px 0;
+}
+.text4{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 17px;
+}

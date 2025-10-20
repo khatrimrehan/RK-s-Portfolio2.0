@@ -1,0 +1,250 @@
+@media only screen and (max-width: 1060px) {
+  .navbar {
+    padding: 0 30px;
+  }
+
+  nav {
+    padding-top: 10px;
+  }
+
+  .navbar .text {
+    font-size: 24px;
+  }
+
+  .home {
+    padding-top: 10px;
+  }
+
+  p {
+    font-size: 15px;
+    margin: 0 10px;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  nav .navbar .menu ul {
+    display: none;
+  }
+
+  .button-36 {
+    display: none;
+  }
+
+  #menubutton {
+    font-size: 30px;
+    display: block;
+    padding-top: 0.1px;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .text span {
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .bottom1 li {
+    font-size: 0.8rem;
+  }
+
+  .bottom1 li span1 {
+    font-size: 25px;
+  }
+
+}
+
+@media only screen and (max-width: 1230px) {
+  .content {
+    width: 70%;
+  }
+
+  p {
+    margin: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  p {
+    font-size: 9px;
+  }
+
+  nav {
+    padding-top: 9px;
+  }
+
+  h1 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  p {
+    font-size: 11px;
+    margin: 0 40px;
+  }
+
+  .text span {
+    font-size: 25px;
+    line-height: 50px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  p {
+    margin: 0 2px;
+    font-size: 13px;
+  }
+
+  .home {
+    padding-bottom: 10px;
+  }
+
+  .content {
+    padding-bottom: 1px;
+  }
+
+  .content {
+    margin-bottom: 10px;
+  }
+
+  .home {
+    min-height: 100vh;
+  }
+
+  .cr {
+    padding-top: 100px;
+    padding-bottom: 10px;
+  }
+
+  .card img {
+    height: 22.5px;
+  }
+
+  .group {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about .about-content {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-content .right {
+    width: 90%;
+    margin: 40px 0;
+  }
+
+  .left img {
+    border-radius: 40px;
+  }
+
+  .services .boxes .box {
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+@media (max-width: 750px) {
+  .about .left img {
+    height: 350px;
+    width: 350px;
+  }
+
+  section .topic {
+    font-size: 25px;
+  }
+
+  .about-details .right p {
+    font-size: 16px;
+  }
+
+  nav {
+    padding: 7px 0;
+  }
+
+  .thelogo {
+    width: 25px;
+    margin-left: 18px;
+  }
+
+  .skills .skills-details {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .skills-details .text {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .skills-details .boxes {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .services .boxes .box {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .skills-details .boxes .per {
+    font-size: 50px;
+
+  }
+
+  footer .text {
+    font-size: 13px;
+  }
+
+  .comm {
+    font-size: 13px;
+    text-align: justify;
+  }
+
+  .hap {
+    text-align: justify;
+  }
+
+  .about-content .right {
+    margin-top: 10px;
+  }
+
+  .about {
+    padding-top: 10px;
+
+  }
+
+  .skills {
+    padding-top: 10px;
+  }
+
+  .services {
+    padding-top: 10px;
+  }
+
+  .contact {
+    padding-top: 10px;
+    margin-bottom: 60px;
+  }
+
+
+}
